@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS // Next-Gen Tech Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">NEXUS //</div>
+    <button class="cart-trigger" id="open-cart">
+      Cart <span class="cart-badge" id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main class="container">
+    <section class="products-grid" id="products-grid"></section>
+
+    <aside class="ai-assistant">
+      <h2>AI Concierge</h2>
+      <div class="api-key-container">
+        <input type="password" id="api-key-input" placeholder="Enter Gemini API Key">
+        <button id="save-key-btn">Save Key</button>
+      </div>
+      <div id="chat-box" class="chat-box">
+        <div class="message bot-message">Welcome to NEXUS. How can I assist your setup today?</div>
+      </div>
+      <div class="chat-input-container">
+        <input type="text" id="user-input" placeholder="Ask about specs, compatibility...">
+        <button id="send-btn" class="add-cart-btn">Send</button>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Cart & Checkout Modal -->
+  <div class="modal-overlay" id="cart-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Your Cart</h2>
+        <button class="close-btn" id="close-modal">&times;</button>
+      </div>
+      <div class="cart-items-list" id="cart-items"></div>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold;">
+        <span>Total:</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+      
+      <form class="checkout-form" id="checkout-form">
+        <h3>Checkout Details</h3>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Card Number (Demo)" required>
+        <button type="submit" class="pay-btn">Complete Purchase</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
