@@ -6,7 +6,7 @@ const products = [
   { id: 3, name: "Cyber-Grip Keyboard", price: 129.99, desc: "Mechanical switches with dynamic rgb lighting.", img: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400" },
   { id: 4, name: "Holo-Display Glasses", price: 499.99, desc: "AR glasses with lightweight spatial displays.", img: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400" },
   { id: 5, name: "Aero-Glide Drone", price: 349.99, desc: "4K AI tracking drone with auto-obstacle avoidance.", img: "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=400" },
-  { id: 6, name: "Pulse Portable Speaker", price: 89.99, desc: "360-degree spatial audio with sub-bass matrix.", img: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400" }
+  { id: 6, name: "Pulse Portable Speaker", price: 89.99, desc: "360-degree spatial audio with sub-bass matrix.", img: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400" },
   { id: 7, name: "Cyberpunk Gaming Mouse", price: 79.99, desc: "Ultra-lightweight mouse with 26K DPI sensor.", img: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=400" },
   { id: 8, name: "Holographic Studio Mic", price: 159.99, desc: "Studio-grade USB microphone with active noise cancellation.", img: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400" }
 ];
