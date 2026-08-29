@@ -1,4 +1,4 @@
-const GEMINI_MODEL = "gemini-3.6-flash";
+const GEMINI_MODEL = "gemini-2.5-flash";
 
 const products = [
   { id: 1, name: "Neural Link Headset", price: 299.99, desc: "Direct-brain interface for zero-latency control.", img: "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400" },
@@ -37,7 +37,6 @@ function addToCart(id) {
   updateCartUI();
 }
 
-// Function to remove an item by index
 function removeFromCart(index) {
   cart.splice(index, 1);
   updateCartUI();
